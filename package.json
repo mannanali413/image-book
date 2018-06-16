@@ -1,0 +1,45 @@
+{
+  "name": "imagedownload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "git ls-files | grep .js$ | xargs prettier --print-width 80 --single-quote --no-semi --no-bracket-spacing --write"
+  },
+  "author": "mir ali",
+  "license": "ISC",
+  "dependencies": {
+    "gm": "^1.23.1",
+    "growl": "^1.10.5",
+    "image-downloader": "^3.4.1",
+    "pdfkit": "^0.8.3"
+  },
+  "devDependencies": {
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "ghooks": "^2.0.4",
+    "prettier": "^1.13.5",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ]
+    }
+  }
+}
